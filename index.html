@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>random user generator</title>
+		<link rel="stylesheet" href="./style.css" />
+	</head>
+	<body>
+		<div id="app">
+			<!-- v-bind: to bind values from data or : asa shortcut -->
+			<img :class="gender" v-bind:src="img" :alt="firstName" />
+			<div class="data">
+				<h1>{{firstName}} {{lastName}}</h1>
+				<h3>{{email}}</h3>
+			</div>
+			<button v-on:click="getUser()" :class="gender">get random user</button>
+		</div>
+
+		<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/3.2.20/vue.cjs.js" integrity="sha512-2e2aXOh4/FgkCAUyurkjk0Uw4m1gPcExFwb1Ai4Ajjg97se/FEWfrLG1na4mq8cgOzouc8qLIqsh0EGksPGdqQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script> -->
+		<script src="https://unpkg.com/vue@3.0.5"></script>
+		<script src="./app.js"></script>
+	</body>
+</html>
